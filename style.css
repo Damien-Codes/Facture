@@ -73,3 +73,13 @@ button{
     margin: 5px;
     padding-left: 0,8%;
 }
+input{
+    width: 97.5%;
+    text-align: right;
+}
+input:hover{
+    box-shadow: rgb(255, 145, 0) 2px 2px;
+}
+button:hover{
+    box-shadow: rgb(255, 145, 0) 2px 2px;
+}
