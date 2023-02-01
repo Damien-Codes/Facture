@@ -1,0 +1,75 @@
+body{
+    background-color: rgb(121, 191, 241);
+    text-decoration-line: none;
+    margin: 0%;
+    padding: 0%;
+}
+nav{
+    background-color: teal;
+    display: flex;
+    width: auto;
+    
+}
+.block2{
+    display: block;
+    text-align: center;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.block3{
+    display: block;
+    text-align: left;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+section{
+    display: flex;
+}
+.condition{
+    display: block;
+    text-align: right;
+    margin-right: 3%;
+}
+.Destination{
+    display: block;
+    margin-left: 10%;
+    margin-right: 10%;    
+}
+.Envoyé{
+    display: block;
+    float: right;
+}
+table{
+    width: 95%;
+    border: solid black;
+    margin: 2%;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.bas{
+    display: flex;
+}
+.remarques{
+    display: block;
+    margin-left: 3%;
+    padding-right: 10%;
+    border-right-width: 20px;
+}
+.sous-total{
+    display: block;
+    text-align: right;
+    float: center;
+    margin-left: 1%;
+    margin-right: 20%;
+}
+.total{
+    display: block;
+    text-align: right;
+    float: left;
+    margin-left: 10%;
+    margin-right: 5%;
+}
+button{
+    margin: 5px;
+    padding-left: 0,8%;
+}
