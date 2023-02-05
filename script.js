@@ -1,1 +1,1 @@
-console.log('MCoucou')
+// alert("yé souis lo potit chat avec une grosse patte")
