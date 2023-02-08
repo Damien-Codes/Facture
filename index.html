@@ -49,36 +49,36 @@
                 <p>Email</p>
             </div>    
         </section>
-        <table border="1">
-            <tr>
+        <table id="table_inv" border="1">
+            <tr class="DESC">
                 <th>DESCRIPTION</th>
                 <th>QUANTITÉ</th>
                 <th>PRIX UNITAIRE</th>
-                <td id="total">TOTAL</td>
+                <th>TOTAL</th>
             </tr>
-            <tr>
-                <td>DESC1</td>
-                <td><input type="text" name=""></td>
-                <td><input type="text" name=""></td>
-                <td id="totalDesc1"><input type="text" name=""></d>
+            <tr id="modeleLigne">
+                <td><input type="text" name="desc" class="input desc" value="DESC"></td>
+                <td><input type="text" name="qte" class="input qte" value="0"></td>
+                <td><input type="text" name="prix" class="input prix" value="0"></td>
+                <td><input type="text" name="total" class="totalLigne" readonly="readonly" value="0.00"></td>
             </tr>
-            <tr>
-                <td>DESC2</td>
-                <td><input type="text" name=""></td>
-                <td><input type="text" name=""></td>
-                <td id="totalDesc2"><input type="text" name=""></td>
+            <tr id="modeleLigne">
+                <td><input type="text" name="desc" class="input desc" value="DESC"></td>
+                <td><input type="text" name="qte" class="input qte" value="0"></td>
+                <td><input type="text" name="prix" class="input prix" value="0"></td>
+                <td><input type="text" name="total" class="totalLigne" readonly="readonly" value="0.00"></td>
             </tr>
-            <tr>
-                <td>DESC3</td>
-                <td><input type="text" name=""></td>
-                <td><input type="text" name=""></td>
-                <td id="totalDesc3"><input type="text" name=""></td>
+            <tr id="modeleLigne">
+                <td><input type="text" name="desc" class="input desc" value="DESC"></td>
+                <td><input type="text" name="qte" class="input qte" value="0"></td>
+                <td><input type="text" name="prix" class="input prix" value="0"></td>
+                <td><input type="text" name="total" class="totalLigne" readonly="readonly" value="0.00"></td>
             </tr>
-            <tr>
-                <td>DESC4</td>
-                <td rowspan="2"><input type="text" name=""></td>
-                <td><input type="text" name=""></td>
-                <td id="totalDesc4"><input type="text" name=""></td>
+            <tr id="lastLigne">
+                <td><input type="text" name="desc" class="input desc" value="DESC"></td>
+                <td><input type="text" name="qte" class="input" value="0"></td>
+                <td><input type="text" name="prix" class="input" value="0"></td>
+                <td><input type="text" name="total" class="totalLigne" readonly="readonly" value="0.00"></td>
             </tr>
         </table> 
         <section class="bas">
@@ -95,7 +95,7 @@
                 <hr>
                 <p>SOLDE DU</p>
             </div>
-            <div class="total">
+            <div class="total_a_droite">
                 <p>1464</p>
                 <p>10.00</p>
                 <p>1317.6</p>
@@ -107,9 +107,9 @@
             </div>
         </section>
         <div class="button">
-            <button>Calculer</button>
-            <button>Ajouter une ligne</button>
-            <button>Supprimer une ligne</button>
+            <button onclick="calculate()">Calculer</button>
+            <button onclick="ajouterLigne()">Ajouter une ligne</button>
+            <button onclick="supprimerLigne()">Supprimer une ligne</button>
             <button>Remplir automatiquement</button>
             <button>Annuler</button>
         </div>
