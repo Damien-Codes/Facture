@@ -36,15 +36,13 @@ function calculate(){
 
     var TAUX = document.getElementsByClassName("TAUX");
 
-    // var TAXE = document.getElementsByClassName("TOTALREMISE");
-    // TAXE[0].value = TOTAL[0].value * TAUX[0].value;
-}
-// Cette fonction sert a réinitialiser les ligne du tableau
-function reinitialiser(){
-    total="";
-}
+    var TAXE = document.getElementsByClassName("TAXE");
+    TAXE[0].value = TOTAL[0].value * TAUX[0].value;
 
-
+    var SOLDE = document.getElementsByClassName("SOLDE");
+    SOLDE[0].value = TOTALREMISE[0].value + TAXE[0].value;
+}
+// Cette fonction sert a mettre des valeur aléatoires dans les ligne du tableau
 function remplir() {
     let listePrix = document.getElementsByClassName("prix");
     let listeQte = document.getElementsByClassName("qte");
@@ -62,4 +60,8 @@ function remplir() {
         listeQte[i].value = qte;
         listePrix[i].value = prix;
     }
+}
+// Cette fonction sert a réinitialiser les ligne du tableau
+function reinitialiser(){
+    table_inv="";
 }

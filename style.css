@@ -69,14 +69,16 @@ table tr{
     display: block;
     justify-content: right;
     text-align: right;
-    margin-left: 21%;
+    margin-left: 51%;
 }
 .total_a_droite{
     display: block;
     justify-content: right;
     text-align: right;
     float: left;
-    margin-left: 20%;
+    font-size: 245%;
+    margin-right: 5%;
+    margin-left: 5%;
 }
 button{
     margin: 5px;
