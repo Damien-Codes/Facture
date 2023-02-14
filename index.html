@@ -11,6 +11,7 @@
         <script src="script.js" defer></script>
     </head>
     <body>
+       
         <nav>
             <img src="Bonhomme.PNG" alt="ijoza">
             <div class="block2">
@@ -76,8 +77,8 @@
             </tr>
             <tr id="lastLigne">
                 <td><input type="text" name="desc" class="input desc" value="DESC"></td>
-                <td><input type="text" name="qte" class="input" value="0"></td>
-                <td><input type="text" name="prix" class="input" value="0"></td>
+                <td><input type="text" name="qte" class="input qte" value="0"></td>
+                <td><input type="text" name="prix" class="input prix" value="0"></td>
                 <td><input type="text" name="total" class="totalLigne" readonly="readonly" value="0.00"></td>
             </tr>
         </table> 
@@ -96,22 +97,22 @@
                 <p>SOLDE DU</p>
             </div>
             <div class="total_a_droite">
-                <p>1464</p>
-                <p>10.00</p>
-                <p>1317.6</p>
-                <p>10.00%</p>
-                <p>146.4</p>
+                <input type="text" name="TOTAL" class="TOTAL" readonly value="0">
+                <input type="text" name="REMISE" class="REMISE" value="0">
+                <input type="text" name="TOTALREMISE" class="TOTALREMISE" value="0">
+                <input type="text" name="TAUX" class="TAUX" value="0">
+                <input type="text" name="TAXE" class="TAXE" value="0">
                 <p>5.00</p>
                 <hr>
-                <p>1469</p>
+                <input type="text" name="TOTAL" class="TOTAL" readonly="readonly" value="0">
             </div>
         </section>
         <div class="button">
             <button onclick="calculate()">Calculer</button>
             <button onclick="ajouterLigne()">Ajouter une ligne</button>
             <button onclick="supprimerLigne()">Supprimer une ligne</button>
-            <button>Remplir automatiquement</button>
-            <button>Annuler</button>
+            <button onclick="remplir()">Remplir automatiquement</button>
+            <button onclick="reinitialiser()">Annuler</button>
         </div>
     </body>
 </html>
