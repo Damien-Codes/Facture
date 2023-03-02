@@ -30,6 +30,8 @@ function calculate(){
     TOTAL[0].value = total;
 // Calcul la REMISE
     var REMISE = document.getElementsByClassName("REMISE");
+// Calcul la EXPEDITO
+    var EXPEDITO = document.getElementsByClassName("EXPEDITO");
 // Calcul le Sous-TOTAL et le Sous-TOTAL
     var TOTALREMISE = document.getElementsByClassName("TOTALREMISE");
     TOTALREMISE[0].value = TOTAL[0].value - REMISE[0].value;
@@ -37,10 +39,11 @@ function calculate(){
     var TAUX = document.getElementsByClassName("TAUX");
 
     var TAXE = document.getElementsByClassName("TAXE");
-    TAXE[0].value = TOTAL[0].value * TAUX[0].value;
+    TAXE[0].value = parseInt(TOTAL[0].value) * parseInt(TAUX[0].value);
 
     var SOLDE = document.getElementsByClassName("SOLDE");
-    SOLDE[0].value = TOTALREMISE[0].value + TAXE[0].value;
+    SOLDE[0].value = parseInt(TOTALREMISE[0].value)+parseInt(TAXE[0].value)+parseInt( EXPEDITO[0].value);
+
 }
 // Cette fonction sert a mettre des valeur aléatoires dans les ligne du tableau
 function remplir() {
